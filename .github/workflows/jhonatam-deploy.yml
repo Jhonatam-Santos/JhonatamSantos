@@ -33,7 +33,8 @@ jobs:
     
     - name: Install rsync 📚
       run: |
-        npm install -y rsync 
+        npm install rsync 
+        
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.2.5
       with:
