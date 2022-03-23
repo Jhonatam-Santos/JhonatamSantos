@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
@@ -30,7 +30,7 @@ jobs:
     
     - name: Install rsync 📚
       run: | 
-        npm install rsync
+        apt-get update && apt-get install -y rsync
         
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.2.5
