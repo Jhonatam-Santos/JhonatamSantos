@@ -69,27 +69,19 @@ const Home = () => {
               borderRadius='full'
               overflow='hidden'
             >
-<<<<<<< HEAD
               <Image
                 borderColor='whiteAlpha.800'
                 borderWidth={2}
                 borderStyle='solid'
                 width='100px'
                 height='100px'
-                display='inline-block'
-=======
-              <ProfileImage
-                src='https://avatars.githubusercontent.com/u/82036601?v=4'
-                alt='Profile image'
->>>>>>> 4ad1877bf3dc70b71ba37d1419b3317e1ea452b4
-                borderRadius='full'
                 src='https://avatars.githubusercontent.com/u/82036601?v=4'
                 alt='profile image'
+                display='inline-block'
               />
-              
-            </Box>
-          </Box>
-        </Box>
+            </Box >
+          </Box >
+        </Box >
 
         <Section delay={0.1}>
           <Heading as='h3' variant='section-title'>
@@ -157,8 +149,8 @@ const Home = () => {
             </ListItem>
           </List>
         </Section>
-      </Container>
-    </Layout>
+      </Container >
+    </Layout >
   )
 }
 
