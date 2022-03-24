@@ -69,6 +69,7 @@ const Home = () => {
               borderRadius='full'
               overflow='hidden'
             >
+<<<<<<< HEAD
               <Image
                 borderColor='whiteAlpha.800'
                 borderWidth={2}
@@ -76,6 +77,11 @@ const Home = () => {
                 width='100px'
                 height='100px'
                 display='inline-block'
+=======
+              <ProfileImage
+                src='https://avatars.githubusercontent.com/u/82036601?v=4'
+                alt='Profile image'
+>>>>>>> 4ad1877bf3dc70b71ba37d1419b3317e1ea452b4
                 borderRadius='full'
                 src='https://avatars.githubusercontent.com/u/82036601?v=4'
                 alt='profile image'
