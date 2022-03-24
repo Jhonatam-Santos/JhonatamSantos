@@ -15,19 +15,13 @@ jobs:
       matrix:
         node-version: [12.x]
 
-
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2       
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
-    - run: npm run build
-    - run: npm test
-    - run: npm run export
-    
     - name: Cache multiple paths 🚀
       uses: actions/cache@v2
       with:
@@ -37,6 +31,10 @@ jobs:
         key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
         restore-keys: |
           ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
+    - run: npm ci
+    - run: npm run build
+    - run: npm test
+    - run: npm run export
     
     - name: Install rsync 📚
       run: | 
