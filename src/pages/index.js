@@ -24,9 +24,6 @@ import {
   IoLogoWhatsapp
 } from 'react-icons/io5'
 
-const ProfileImage = chakra(Image, {
-  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
-})
 
 const Home = () => {
   return (
@@ -72,20 +69,25 @@ const Home = () => {
               borderRadius='full'
               overflow='hidden'
             >
-              <ProfileImage
-                src='/images/contents/JperfilImage.svg'
-                alt='Profile image'
+              <Image
+                borderColor='whiteAlpha.800'
+                borderWidth={2}
+                borderStyle='solid'
+                width='100px'
+                height='100px'
+                display='inline-block'
                 borderRadius='full'
-                width='100%'
-                height='100%'
+                src='https://avatars.githubusercontent.com/u/82036601?v=4'
+                alt='profile image'
               />
+              
             </Box>
           </Box>
         </Box>
 
         <Section delay={0.1}>
           <Heading as='h3' variant='section-title'>
-            Works
+            Study
           </Heading>
           <Paragraph>
             Currently studying Node.js, C, C++, C#, JavaScript, React.js and Next.js. I'm looking forward
