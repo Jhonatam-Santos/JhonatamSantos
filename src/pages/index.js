@@ -73,7 +73,7 @@ const Home = () => {
               overflow='hidden'
             >
               <ProfileImage
-                src='/images/contents/JperfilImage.jpeg'
+                src='/images/contents/JperfilImage.svg'
                 alt='Profile image'
                 borderRadius='full'
                 width='100%'
