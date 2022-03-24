@@ -1,3 +1,4 @@
+import Logo from './logo'
 import NextLink from 'next/link'
 import {
   Container,
@@ -13,14 +14,14 @@ import {
   IconButton,
   useColorModeValue
 } from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icon'
+import { HamburgerIcon } from '@chakra-ui/icons'
+import ThemeToggleButton from './theme-toggle-button'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
-  const inactiveColor = useColorModeValue('gray.200', 'whiteAlpha.900')
-
+  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   return (
-    <NextLink>
+    <NextLink href={href} passHref scroll={false}>
       <Link
         p={2}
         bg={active ? 'grassTeal' : undefined}
@@ -50,14 +51,14 @@ const Navbar = props => {
       <Container
         display='flex'
         p={2}
-        maxW='container'
+        maxW='container.md'
         wrap='wrap'
         align='center'
         justify='space-between'
       >
         <Flex align='center' mr={5}>
           <Heading as='h1' size='lg' letterSpacing={'tighter'}>
-            <Logo/>
+            <Logo />
           </Heading>
         </Flex>
 
@@ -75,14 +76,36 @@ const Navbar = props => {
           <LinkItem href='/posts' path={path}>
             posts
           </LinkItem>
-          <LinkItem href='/study' path={path}>
-            studyng
-          </LinkItem>
-          <LinkItem href='/projects' path={path}>
-            projects
-          </LinkItem>
         </Stack>
+
+        <Box flex={1} align='right'>
+          <ThemeToggleButton />
+
+          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+            <Menu isLazy id='navbar-menu'>
+              <MenuButton
+                as={IconButton}
+                icon={<HamburgerIcon />}
+                variant='outline'
+                aria-label='Options'
+              />
+              <MenuList>
+                <NextLink href='/' passHref>
+                  <MenuItem as={Link}>about</MenuItem>
+                </NextLink>
+                <NextLink href='/works' passHref>
+                  <MenuItem as={Link}>works</MenuItem>
+                </NextLink>
+                <NextLink href='/posts' passHref>
+                  <MenuItem as={Link}>posts</MenuItem>
+                </NextLink>
+              </MenuList>
+            </Menu>
+          </Box>
+        </Box>
       </Container>
     </Box>
   )
 }
+
+export default Navbar

@@ -6,7 +6,7 @@ const ThemeToggleButton = () => {
   const { toggleColorMode } = useColorMode()
 
   return (
-    <motion.div
+    <motion.div 
     style={{ display: 'inline-block'}}
     key={useColorModeValue('light', 'dark')}
     initial={{y: -20, opacity: 0}}
