@@ -51,7 +51,7 @@ const Home = () => {
             <Heading as='h2' variant='page-title'>
               Jhonatam Santos
             </Heading>
-            <p>Developer ( Node.js / React.js / Next.js )</p>
+            <p>Developer ( WEB / Desktop )</p>
           </Box>
           <Box
             flexShrink={0}
@@ -85,16 +85,13 @@ const Home = () => {
 
         <Section delay={0.1}>
           <Heading as='h3' variant='section-title'>
-            Study
+            Sobre mim
           </Heading>
           <Paragraph>
-            Currently studying Node.js, C, C++, C#, JavaScript, React.js and Next.js. I'm looking forward
-            for the first wave as a programmer, passionate about programming I have the basis for
-            learn any language and technology proposed, I have some projects in
-            progress developed in java, php and react. My TCC project in java and react
-            is waiting to be used in the state government when completed nominated of
-            “maquinaApi” on my github, in partnership with the Federal University of Sergipe, if
-            given the opportunity, it will be a pleasure to work with you.
+            Estudante do Instituto Federal de Sergipe, descobri no curso de informática minha paixão por desenvolvimento de sistemas.
+            Aprendendo a lógica de programação, uma introdução a estrutura de dados, hardware, software e banco de dados,
+            tendo java e php como linguagens da grade curricular, mas atualmente me especializando em JavaScript.
+            Atualmente estou em busca de uma oportunidade de ingressar no mercado de trabalho e me desenvolver como programador, e profissional.
           </Paragraph>
           <Box
             align='center'
