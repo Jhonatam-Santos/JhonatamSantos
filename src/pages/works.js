@@ -15,7 +15,7 @@ const Works = () => {
                     <Section>
                         <WorkGridItem
                             id='TCC'
-                            title='TCC-application'
+                            title='Projeto de TCC (IFS)'
                             thumbnail={thumb1}
                         >
                             Projeto para determinar a massa específica de grãos (em desenvolvimento).

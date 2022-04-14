@@ -1,7 +1,7 @@
 {
   "name": "profile-prof",
   "version": "1.0.0",
-  "description": "Minha página de portifólio",
+  "description": "Minha página pessoal",
   "main": "index.js",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",

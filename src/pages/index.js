@@ -5,8 +5,6 @@ import {
   Heading,
   Box,
   useColorModeValue,
-  chakra,
-  SimpleGrid,
   List,
   ListItem,
   Button,
