@@ -20,8 +20,7 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
 import {
   IoLogoTwitter,
-  IoLogoInstagram,
-  IoLogoWhatsapp
+  IoLogoInstagram
 } from 'react-icons/io5'
 
 
@@ -43,7 +42,7 @@ const Home = () => {
           textAlign='center'
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         >
-          Hello, I&apos;m a full-stack developer in Aracaju-SE
+          Olá, sou um desenvolvedor fullstack que reside em Aracaju-SE
         </Box>
 
         <Box display={{ md: 'flex' }}>
@@ -51,7 +50,7 @@ const Home = () => {
             <Heading as='h2' variant='page-title'>
               Jhonatam Santos
             </Heading>
-            <p>Developer ( WEB / Desktop )</p>
+            <p>desenvolvedor ( WEB / Desktop )</p>
           </Box>
           <Box
             flexShrink={0}
@@ -102,7 +101,7 @@ const Home = () => {
                 rightIcon={<ChevronRightIcon />}
                 colorScheme='teal'
               >
-                My projects
+                Meus projetos
               </Button>
             </NextLink>
           </Box>
@@ -113,33 +112,41 @@ const Home = () => {
           </Heading>
           <BioSection>
             <BioYear>2003</BioYear>
-            Born in 2003 in Pão de Açucar, I moved to Aracaju shortly afterwards, where I have lived most of my life.
+            Nacido no município de pão de Açucar-SE.
           </BioSection>
           <BioSection>
             <BioYear>2018</BioYear>
-            I was approved in the computer technician course at the Federal Institute of Sergipe (IFS).
+            Ingressei no Instituto Federal de Sergipe (IFS), no curso de Informática, aprendendo o básico de hardware e software,
+            com foco em desenvolvimento desktop com java e web com php.
           </BioSection>
           <BioSection>
             <BioYear>2022</BioYear>
-            I finished my course with a java project (still incomplete) that will be used in the state government soon, in addition to venturing into tools like PHP, Laravel, Node.js, JavaScript, React.js and Next.js. Knowledge of git versioning tools.
+            Em fevereiro desse ano me formei e decidi me especializar em JavaScript para desenvolvimento de sistemas.
           </BioSection>
         </Section>
         <Section delay={0.3}>
           <Heading as='h3' variant='section-title'>
-            I ♥
+            Meus hobbies
           </Heading>
           <Paragraph>
-            Programação, Jogos, Artes Marciais, Animes, Música e Esporte.
+           Jogos 2d, League of Legends, praticar artes marciais, programação e ouvir música (estou semper ouvindo músicas).
           </Paragraph>
         </Section>
         <Section delay={0.4}>
           <Heading as='h3' variant='section-title'>
-            On the web
+            Minhas redes sociais
           </Heading>
           <List>
             <ListItem>
               <Link href='https://www.instagram.com/_jhomsantos/' target='_blank'>
                 <Button variant='ghost' colorScheme='teal' leftIcon={<Icon as={IoLogoInstagram} />}>
+                  @_jhomsantos
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href='https://twitter.com/_JhomSantos' target='_blank'>
+                <Button variant='ghost' colorScheme='teal' leftIcon={<Icon as={IoLogoTwitter} />}>
                   @_jhomsantos
                 </Button>
               </Link>

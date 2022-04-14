@@ -18,7 +18,7 @@ const Works = () => {
                             title='TCC-application'
                             thumbnail={thumb1}
                         >
-                            Project for determination of specific mass in grains
+                            Projeto para determinar a massa específica de grãos (em desenvolvimento).
                         </WorkGridItem>
                     </Section>
                 </SimpleGrid>
