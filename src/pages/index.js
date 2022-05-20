@@ -18,7 +18,9 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
 import {
   IoLogoTwitter,
-  IoLogoInstagram
+  IoLogoInstagram,
+  IoLogoGithub,
+  TiDeviceLaptop
 } from 'react-icons/io5'
 
 
@@ -40,7 +42,7 @@ const Home = () => {
           textAlign='center'
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         >
-          Olá, sou um desenvolvedor fullstack que reside em Aracaju-SE
+          Olá, sou um desenvolvedor java júnior
         </Box>
 
         <Box display={{ md: 'flex' }}>
@@ -48,7 +50,7 @@ const Home = () => {
             <Heading as='h2' variant='page-title'>
               Jhonatam Santos
             </Heading>
-            <p>desenvolvedor ( WEB / Desktop )</p>
+            <p>desenvolvedor ( Java / Spring Boot )</p>
           </Box>
           <Box
             flexShrink={0}
@@ -85,10 +87,8 @@ const Home = () => {
             Sobre mim
           </Heading>
           <Paragraph>
-            Estudante do Instituto Federal de Sergipe, descobri no curso de informática minha paixão por desenvolvimento de sistemas.
-            Aprendendo a lógica de programação, uma introdução a estrutura de dados, hardware, software e banco de dados,
-            tendo java e php como linguagens da grade curricular, mas atualmente me especializando em JavaScript.
-            Atualmente estou em busca de uma oportunidade de ingressar no mercado de trabalho e me desenvolver como programador, e profissional.
+            Sou um desenvolvedor java formado em técnico de informática pelo Insituto Federal de Sergipe (IFS), 
+            em busca do meu desenvolvimento como programador e da primeira vaga de trabalho.
           </Paragraph>
           <Box
             align='center'
@@ -106,23 +106,74 @@ const Home = () => {
         </Section>
         <Section delay={0.2}>
           <Heading as='h3' variant='section-title'>
+            Competências
+          </Heading>
+          <List>
+            <ListItem>
+              <Paragraph>
+                Java
+              </Paragraph>
+            </ListItem>
+            <ListItem>
+              <Paragraph>
+                Lógica de programação
+              </Paragraph>
+            </ListItem>
+            <ListItem>
+              <Paragraph>
+                Programação orientada a objetos (POO)
+              </Paragraph>
+            </ListItem>
+            <ListItem>
+              <Paragraph>
+                Estrutura de dados
+              </Paragraph>
+            </ListItem>
+            <ListItem>
+              <Paragraph>
+                Git / GitHub
+              </Paragraph>
+            </ListItem>
+            <ListItem>
+              <Paragraph>
+                REST API
+              </Paragraph>
+            </ListItem>
+            <ListItem>
+              <Paragraph>
+                SQL
+              </Paragraph>
+            </ListItem>
+            <ListItem>
+              <Paragraph>
+                Spring Boot
+              </Paragraph>
+            </ListItem>
+            <ListItem>
+              <Paragraph>
+                Spring Security
+              </Paragraph>
+            </ListItem>
+          </List>
+        </Section>
+        <Section delay={0.3}>
+          <Heading as='h3' variant='section-title'>
             Bio
           </Heading>
           <BioSection>
             <BioYear>2003</BioYear>
-            Nacido no município de pão de Açucar-SE.
+            Nacido no município de Pão de Açucar-SE.
           </BioSection>
           <BioSection>
             <BioYear>2018</BioYear>
-            Ingressei no Instituto Federal de Sergipe (IFS), no curso de Informática, aprendendo o básico de hardware e software,
-            com foco em desenvolvimento desktop com java e web com php.
-          </BioSection>
+              Inicio do meu curso de Técnico de Informática no IFS, onde aprendi sobre lógica de programação, e estrutura de dados básica em Java.
+            </BioSection>
           <BioSection>
             <BioYear>2022</BioYear>
-            Em fevereiro desse ano me formei e decidi me especializar em JavaScript para desenvolvimento de sistemas.
+            Em fevereiro de 2022 me formei.
           </BioSection>
         </Section>
-        <Section delay={0.3}>
+        <Section delay={0.4}>
           <Heading as='h3' variant='section-title'>
             Meus hobbies
           </Heading>
@@ -130,7 +181,7 @@ const Home = () => {
            Jogos 2d, League of Legends, praticar artes marciais, programação e ouvir música (estou semper ouvindo músicas).
           </Paragraph>
         </Section>
-        <Section delay={0.4}>
+        <Section delay={0.5}>
           <Heading as='h3' variant='section-title'>
             Minhas redes sociais
           </Heading>
@@ -138,14 +189,28 @@ const Home = () => {
             <ListItem>
               <Link href='https://www.instagram.com/_jhomsantos/' target='_blank'>
                 <Button variant='ghost' colorScheme='teal' leftIcon={<Icon as={IoLogoInstagram} />}>
-                  @_jhomsantos
+                  Instagram
                 </Button>
               </Link>
             </ListItem>
             <ListItem>
               <Link href='https://twitter.com/_JhomSantos' target='_blank'>
                 <Button variant='ghost' colorScheme='teal' leftIcon={<Icon as={IoLogoTwitter} />}>
-                  @_jhomsantos
+                  Twitter
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href='https://github.com/Jhonatam-Santos' target='_blank'>
+                <Button variant='ghost' colorScheme='teal' leftIcon={<Icon as={IoLogoGithub} />}>
+                  GitHub
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href='https://dev.to/jhonatamsantos' target='_blank'>
+                <Button variant='ghost' colorScheme='teal' leftIcon={<Icon as={TiDeviceLaptop} />}>
+                  Dev.to
                 </Button>
               </Link>
             </ListItem>
